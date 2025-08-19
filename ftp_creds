@@ -1,0 +1,22 @@
+FTP Server Details:
+• Server IP: 45.112.194.3
+• FTP Port: 21
+• Passive Ports: 30000-31000
+
+FTP User Credentials:
+• Username: ftpbackup
+  Password: X0ALjn8a0qxbxZaA
+  Home Directory: /home/ftpbackup
+  Working Directory: /home/ftpbackup/backups
+
+• Username: ftp_1
+  Password: h5W9U5SJ62RIgcx3
+  Home Directory: /home/ftp_1
+  Working Directory: /home/ftp_1/uploads
+
+• Username: ftp_2
+  Password: 5Bg0Ubrfqn6NvJ5w
+  Home Directory: /home/ftp_2
+  Working Directory: /home/ftp_2/files
+
+
