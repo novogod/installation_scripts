@@ -19,3 +19,40 @@
   Connection: ftp://ftp_2:xPhJu7wJbRxKL1l7@45.112.194.3
   Local path: /home/ftp_2/files
   Test result: OK - Upload succeeded
+
+
+Big server
+
+erver Details:
+• IP Address: 166.1.60.25
+• FTP Port: 21
+• Mode: Plain FTP (no encryption)
+• Passive Ports: 40000-40050
+
+FTP LaGente
+
+FTP Users:
+• Username: ftpbackup
+  Password: TzwZys0GhBqwRoXA
+  Directory: backups
+  Connection: ftp://ftpbackup:TzwZys0GhBqwRoXA@166.1.60.25
+
+  FTP Apartments:
+
+• Username: ftp_1
+  Password: aAeCox8qvls15OI1
+  Directory: uploads
+  Connection: ftp://ftp_1:aAeCox8qvls15OI1@166.1.60.25
+
+• Username: ftp_2
+  Password: Dn9SC1ksMw9PkLzn
+  Directory: files
+  Connection: ftp://ftp_2:Dn9SC1ksMw9PkLzn@166.1.60.25
+
+FileZilla Settings:
+• Protocol: FTP - File Transfer Protocol
+• Host: 166.1.60.25
+• Port: 21
+• Encryption: Only use plain FTP (insecure)
+• Logon Type: Normal
+• Transfer Settings: Passive
