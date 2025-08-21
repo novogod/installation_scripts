@@ -2,11 +2,17 @@
 
 # VPS Complete Backup Script (No Docker Downtime)
 # Run as root: bash vps_backup_no_stop.sh
-# Creates comprehensive backup in /home/ftpbackup/ without stopping Docker containers
+# Creates comprehensive backup in /home/backups/ without stopping Docker containers
 
 set -e
 
-BACKUP_DIR="/home/ftpbackup"
+BACKUP_PARENT_DIR="/home/backups"
+# Ensure backup directory exists and is world-readable
+if [[ ! -d "$BACKUP_PARENT_DIR" ]]; then
+    mkdir -p "$BACKUP_PARENT_DIR"
+    chmod 755 "$BACKUP_PARENT_DIR"
+fi
+BACKUP_DIR="$BACKUP_PARENT_DIR"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 BACKUP_NAME="vps_backup_${TIMESTAMP}"
 BACKUP_PATH="${BACKUP_DIR}/${BACKUP_NAME}"
@@ -555,6 +561,7 @@ log "✅ NO DOCKER CONTAINERS WERE STOPPED - Zero downtime backup!"
 log "Backup location: ${BACKUP_DIR}/${BACKUP_NAME}.tar.gz"
 log "Backup size: ${BACKUP_SIZE}"
 log "To restore: Extract archive and run restore.sh as root"
+echo -e "\n${GREEN}The file ${BACKUP_DIR}/${BACKUP_NAME}.tar.gz is saved successfully!!!${NC}\n"
 
 # Clean up temporary directory if user wants
 read -p "Remove uncompressed backup directory? (y/N): " -n 1 -r

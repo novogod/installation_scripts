@@ -1,58 +1,34 @@
-=== FTP CONNECTION DETAILS ===
-• Username: ftpbackup
-  Password: ubjFmuqrtWZ2gV3u
-  Directory: backups
-  Connection: ftp://ftpbackup:ubjFmuqrtWZ2gV3u@45.112.194.3
-  Local path: /home/ftpbackup/backups
-  Test result: OK - Upload succeeded
-
-• Username: ftp_1
-  Password: EbwO9SOZ5tIeDJdQ
-  Directory: uploads
-  Connection: ftp://ftp_1:EbwO9SOZ5tIeDJdQ@45.112.194.3
-  Local path: /home/ftp_1/uploads
-  Test result: OK - Upload succeeded
-
-• Username: ftp_2
-  Password: xPhJu7wJbRxKL1l7
-  Directory: files
-  Connection: ftp://ftp_2:xPhJu7wJbRxKL1l7@45.112.194.3
-  Local path: /home/ftp_2/files
-  Test result: OK - Upload succeeded
-
-
-Big server
-
-erver Details:
-• IP Address: 166.1.60.25
+Server Details:
+• IP Address: 193.221.203.121
 • FTP Port: 21
 • Mode: Plain FTP (no encryption)
 • Passive Ports: 40000-40050
 
-FTP LaGente
-
 FTP Users:
 • Username: ftpbackup
-  Password: TzwZys0GhBqwRoXA
+  Password: GjBkNJZttYN7gaML
   Directory: backups
-  Connection: ftp://ftpbackup:TzwZys0GhBqwRoXA@166.1.60.25
-
-  FTP Apartments:
+  Connection: ftp://ftpbackup:GjBkNJZttYN7gaML@193.221.203.121
 
 • Username: ftp_1
-  Password: aAeCox8qvls15OI1
+  Password: E3yh2Of8CgEVTfR5
   Directory: uploads
-  Connection: ftp://ftp_1:aAeCox8qvls15OI1@166.1.60.25
+  Connection: ftp://ftp_1:E3yh2Of8CgEVTfR5@193.221.203.121
 
 • Username: ftp_2
-  Password: Dn9SC1ksMw9PkLzn
+  Password: 36nxVviIjUFHVi13
   Directory: files
-  Connection: ftp://ftp_2:Dn9SC1ksMw9PkLzn@166.1.60.25
+  Connection: ftp://ftp_2:36nxVviIjUFHVi13@193.221.203.121
 
 FileZilla Settings:
 • Protocol: FTP - File Transfer Protocol
-• Host: 166.1.60.25
+• Host: 193.221.203.121
 • Port: 21
 • Encryption: Only use plain FTP (insecure)
 • Logon Type: Normal
 • Transfer Settings: Passive
+
+Security Warning:
+• Plain FTP transmits passwords and data unencrypted
+• Use only on trusted networks or for temporary transfers
+• Consider SFTP for production use
